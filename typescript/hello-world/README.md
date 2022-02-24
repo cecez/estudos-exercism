@@ -31,6 +31,7 @@ http://exercism.io/languages/typescript
 Install assignment dependencies:
 
 ```bash
+docker run -it --rm --name my-running-script -v "$PWD":/usr/src/app -w /usr/src/app node:16 yarn install
 $ yarn install
 ```
 
@@ -39,6 +40,7 @@ $ yarn install
 Execute the tests with:
 
 ```bash
+docker run -it --rm --name my-running-script -v "$PWD":/usr/src/app -w /usr/src/app node:16 yarn test
 $ yarn test
 ```
 
