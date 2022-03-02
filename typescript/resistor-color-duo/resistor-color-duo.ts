@@ -1,24 +1,24 @@
-export function decodedValue(resistores: string[]): number {
+// 1. Use enum wherever applicable. This will be similar to -
 
-  const primeiraResistencia: number = decodificaCor(resistores[0])
-  const segundaResistencia: number = decodificaCor(resistores[1])
-
-  return parseInt(`${primeiraResistencia}${segundaResistencia}`)
+enum Resistores {
+  "black",
+  "brown",
+  "red",
+  "orange",
+  "yellow",
+  "green",
+  "blue",
+  "violet",
+  "grey",
+  "white",
 }
 
-function decodificaCor(cor: string): number {
-  switch (cor) {
-    case "black": return 0
-    case "brown": return 1
-    case "red": return 2
-    case "orange": return 3
-    case "yellow": return 4
-    case "green": return 5
-    case "blue": return 6
-    case "violet": return 7
-    case "grey": return 8
-    case "white": return 9
-  }
+// Will be similar to: type BandColorType = "black" | "brown" | "red" | "orange"; 
+type TipoResistores = keyof typeof Resistores
 
-  return -1
+// When defining a function, it's always good to narrow down its arguments along with their types. Also add a return type for the function as well.
+// Used array destructure to only take 2 values from arguments passed
+export function decodedValue([primeiraCor, segundaCor]: TipoResistores[]): number {
+  // To convert a string -> number, you could use Number(), parseInt() or just prepend '+' to the string
+  return +`${Resistores[primeiraCor]}${Resistores[segundaCor]}`
 }
