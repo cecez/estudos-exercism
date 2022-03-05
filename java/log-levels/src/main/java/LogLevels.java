@@ -1,7 +1,12 @@
 public class LogLevels {
     
     public static String message(String logLine) {
-        throw new UnsupportedOperationException("Please implement the (static) LogLine.message() method");
+
+        
+
+        // remover espaços em branco do início/fim -> trim?
+        
+        return "Teste";
     }
 
     public static String logLevel(String logLine) {
