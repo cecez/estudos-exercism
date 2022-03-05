@@ -1,19 +1,23 @@
 public class LogLevels {
-    
+
     public static String message(String logLine) {
+        int indiceDoisPontos = logLine.indexOf(":");
+        String mensagemNaoFormatada = logLine.substring(indiceDoisPontos + 1);
 
-        
-
-        // remover espaços em branco do início/fim -> trim?
-        
-        return "Teste";
+        return mensagemNaoFormatada.strip();
     }
 
     public static String logLevel(String logLine) {
-        throw new UnsupportedOperationException("Please implement the (static) LogLine.logLevel() method");
+        int indiceAbreColchetes = logLine.indexOf("[");
+        int indiceFechaColchetes = logLine.indexOf("]");
+        String nivelNaoFormatado = logLine.substring(indiceAbreColchetes + 1, indiceFechaColchetes);
+        String nivelFormatado = nivelNaoFormatado.toLowerCase();
+
+        return nivelFormatado;
     }
 
     public static String reformat(String logLine) {
-        throw new UnsupportedOperationException("Please implement the (static) LogLine.reformat() method");
+        return message(logLine) + " (" + logLevel(logLine) + ")";
     }
+
 }
