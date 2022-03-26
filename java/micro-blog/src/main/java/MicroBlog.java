@@ -1,12 +1,14 @@
 class MicroBlog {
+    private static final int MAX_POST_LENGTH = 5;
+
     public String truncate(String input) {
-        String[] arr = input.replaceAll("\\p{So}|.", "$0\0").split("\0+");
+        StringBuilder truncatedInput = new StringBuilder();
 
-        StringBuilder output = new StringBuilder("");
-        for (int i=0; i < Math.min(5, arr.length); i++) {
-            output.append(arr[i]);
-        }
-
-        return output.toString();
+        input
+            .codePoints()
+            .limit(MAX_POST_LENGTH)
+            .forEach(truncatedInput::appendCodePoint);
+        
+        return truncatedInput.toString();
     }
 }
