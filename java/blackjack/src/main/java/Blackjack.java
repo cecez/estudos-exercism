@@ -1,19 +1,51 @@
 public class Blackjack {
+    private static final String STAND = "S";
+    private static final String HIT = "H";
+    private static final String SPLIT = "P";
+    private static final String WIN = "W";
 
     public int parseCard(String card) {
-        throw new UnsupportedOperationException("Please implement the Blackjack.parseCard method");
+        return switch (card) {
+            case "ace" -> 11;
+            case "jack", "queen", "king", "ten" -> 10;
+            case "nine" -> 9;
+            case "eight" -> 8;
+            case "seven" -> 7;
+            case "six" -> 6;
+            case "five" -> 5;
+            case "four" -> 4;
+            case "three" -> 3;
+            case "two" -> 2;
+            default -> 0;
+        };
     }
 
     public boolean isBlackjack(String card1, String card2) {
-        throw new UnsupportedOperationException("Please implement the Blackjack.isBlackjack method");
+        return parseCard(card1) + parseCard(card2) == 21;
     }
 
     public String largeHand(boolean isBlackjack, int dealerScore) {
-        throw new UnsupportedOperationException("Please implement the Blackjack.largeHand method");
+        if (!isBlackjack) {
+            return SPLIT;
+        }
+
+        if (dealerScore != 10 && dealerScore != 11) {
+            return WIN;
+        }
+
+        return STAND;
     }
 
     public String smallHand(int handScore, int dealerScore) {
-        throw new UnsupportedOperationException("Please implement the Blackjack.smallHand method");
+        if (handScore >= 17) {
+            return STAND;
+        }
+
+        if (handScore <= 11 || dealerScore >= 7) {
+            return HIT;
+        }
+
+        return STAND;
     }
 
     // FirstTurn returns the semi-optimal decision for the first turn, given the cards of the player and the dealer.
