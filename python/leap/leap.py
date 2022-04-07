@@ -1,2 +1,5 @@
+import calendar
+
+
 def leap_year(year):
-    pass
+    return calendar.isleap(year)
