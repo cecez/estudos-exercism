@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{C4B5BE1D-5A85-4856-9244-E3081E08E85C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LuciansLusciousLasagna.cs">
+    <Files>
+      <File FileName="LuciansLusciousLasagna.cs" Line="22" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LuciansLusciousLasagna" expanded="True">
+            <Node name="LuciansLusciousLasagna" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="LuciansLusciousLasagna.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="LuciansLusciousLasagna" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.LuciansLusciousLasagna PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

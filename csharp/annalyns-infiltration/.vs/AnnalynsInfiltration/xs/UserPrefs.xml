@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{A248244A-793F-4CFE-9D14-A4F96E730715}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AnnalynsInfiltration.cs">
+    <Files>
+      <File FileName="AnnalynsInfiltration.cs" Line="28" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AnnalynsInfiltration" expanded="True">
+            <Node name="AnnalynsInfiltration" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="AnnalynsInfiltration.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="AnnalynsInfiltration" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.AnnalynsInfiltration PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
